@@ -63,13 +63,17 @@ int process_menu(void)
 
 char process_sorting(void)
 {
-	char c;
+	int c;
 
 	clear_screen();
 	display_sort_menu();
 	c = get_input();
 
-	if (c == 'Q' || c == '1')
+	if (c == 1)
+	{
+		return c;
+	}
+	else if(c == -1)
 	{
 		return c;
 	}
@@ -91,16 +95,22 @@ void print_empty(void)
 
 int get_input(void)
 {
-	char c;
+	char c = 0;
 	int intptr = 0;
 	int digit_count = 0;
 
 	printf("\nPlease enter a value.\n");
 
-	while (isdigit(c = getchar()))
+	while ((c = getchar()) != '\n' && c != EOF)
 	{
-		intptr = intptr * 10 + (c - '0');
-		digit_count++;
+
+
+		// c = getchar();
+		if (isdigit(c))
+		{
+			intptr = intptr * 10 + (c - '0');
+			digit_count++;
+		}
 	}
 
 	if (digit_count)

@@ -11,7 +11,7 @@ int main(void)
 	if (option == 1)
 	{
 		option = process_sorting();
-		if (option == '1')
+		if (option == 1)
 		{
 			clear_screen();
 			insertion_sort();
