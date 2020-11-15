@@ -5,12 +5,9 @@
 
 #include "Sorting/InsertionSort.h"
 #include "Random/Random.h"
+#include "Sorting/SortUtils.h"
 
 #define PRINTCOUNT 500
-
-
-void printarray(unsigned long* longarray, unsigned long count);
-void do_sort(unsigned long* longarray, unsigned long count);
 
 void insertion_sort(void)
 {
@@ -50,17 +47,6 @@ void insertion_sort(void)
 	}
 }
 
-void printarray(unsigned long* longarray, unsigned long count)
-{
-	if (count > 0)
-	{
-		printf("0: %lu ",longarray[0]);
-		for (unsigned long i = 1; i < count; i++)
-		{
-			printf(" |  %lu: %lu ", i, longarray[i]);
-		}
-	}
-}
 
 void do_sort(unsigned long* longarray, unsigned long count)
 {

@@ -2,6 +2,7 @@
 
 #include "Menu/menu.h"
 #include "Sorting/InsertionSort.h"
+#include "Sorting/MergeSort.h"
 
 int main(void)
 {
@@ -15,6 +16,11 @@ int main(void)
 		{
 			clear_screen();
 			insertion_sort();
+		}
+		else if (option == 2)
+		{
+			clear_screen();
+			merge_sort();
 		}
 	}
 

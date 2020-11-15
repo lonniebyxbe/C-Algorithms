@@ -103,9 +103,6 @@ int get_input(void)
 
 	while ((c = getchar()) != '\n' && c != EOF)
 	{
-
-
-		// c = getchar();
 		if (isdigit(c))
 		{
 			intptr = intptr * 10 + (c - '0');

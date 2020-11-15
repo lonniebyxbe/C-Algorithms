@@ -147,6 +147,7 @@
     <ClCompile Include="SourceFiles\Random\Random.c" />
     <ClCompile Include="SourceFiles\Sorting\InsertionSort\InsertionSort.c" />
     <ClCompile Include="SourceFiles\Sorting\MergeSort\MergeSort.c" />
+    <ClCompile Include="SourceFiles\Sorting\SortUtils\SortUtils.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HeaderFiles\Collections\LinkedList.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="HeaderFiles\Random\Random.h" />
     <ClInclude Include="HeaderFiles\Sorting\InsertionSort.h" />
     <ClInclude Include="HeaderFiles\Sorting\MergeSort.h" />
+    <ClInclude Include="HeaderFiles\Sorting\SortUtils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
