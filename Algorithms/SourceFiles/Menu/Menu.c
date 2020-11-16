@@ -36,6 +36,8 @@ void display_sort_menu(void)
 	print_empty();
 	printf("*\t1) Insertion\t\t                      *\n");
 	print_empty();
+	printf("*\t2) Merge\t\t                      *\n");
+	print_empty();
 	printf("*\tQ) Quit   \t\t                        *\n");
 	print_empty();
 	print_header();
@@ -69,11 +71,7 @@ char process_sorting(void)
 	display_sort_menu();
 	c = get_input();
 
-	if (c == 1)
-	{
-		return c;
-	}
-	else if(c == -1)
+	if ((c > 0 && c < 3) || c == -1)
 	{
 		return c;
 	}

@@ -68,6 +68,7 @@ void do_sort(unsigned long* longarray, unsigned long count)
 				// longarray[i] = key;
 				if (i == 0)
 				{
+					// we are decrementing an unsigned long, -1 does not exist
 					overflow = 1;
 				}
 				i--;
@@ -75,6 +76,7 @@ void do_sort(unsigned long* longarray, unsigned long count)
 
 			if (overflow && key < longarray[0])
 			{
+				// we went all the way to the beginning
 				longarray[0] = key;
 				i = 0;
 			}

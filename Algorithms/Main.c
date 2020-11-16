@@ -6,9 +6,11 @@
 
 int main(void)
 {
-	int option;
+	int option = 0;
 	option = process_menu();
 
+	//while (option != 'q' && option != 'Q')
+	//{
 	if (option == 1)
 	{
 		option = process_sorting();
@@ -23,6 +25,14 @@ int main(void)
 			merge_sort();
 		}
 	}
+	//		else if (option != 'q' && option != 'Q')
+	//		{
+	//			option = process_sorting();
+	//		}
+	//	}
+
+	//	option = process_menu();
+	//}
 
 	return 0;
 }
