@@ -11,3 +11,15 @@ void printarray(unsigned long* longarray, unsigned long count)
 		}
 	}
 }
+
+void printarrayrange(unsigned long* longarray, unsigned long begin, unsigned long end)
+{
+	if (end - begin >= 0)
+	{
+		printf("0: %lu ", longarray[begin]);
+		for (unsigned long i = begin + 1; i <= end; i++)
+		{
+			printf(" |  %lu: %lu ", i, longarray[i]);
+		}
+	}
+}
